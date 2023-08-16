@@ -1,9 +1,10 @@
 import sys
+from datetime import datetime
 
 import requests
 from requests import exceptions
 from rich.console import Console
-from rich.table import Table
+from rich.table import Column, Table
 
 from weather_cli.access_api_key import get_api_info
 
@@ -52,7 +53,8 @@ class OpenWeather:
         return weather_emoji
 
     def format_openweather_output(self) -> None:
-        table = Table()
+        timestamp = datetime.now().strftime("%B %d, %Y %H:%M:%S")
+        table = Table(title=f"Date: {timestamp}")
         console = Console(emoji=True)
 
         try:

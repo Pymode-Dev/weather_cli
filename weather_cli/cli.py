@@ -28,9 +28,11 @@ def parse_args():
         "--units",
         "-u",
         action="store_true",
-        help="Temperature conversion between Celsius and " "Fahrenheit",
+        help="Temperature conversion between Celsius and Fahrenheit",
     )
-    parser.add_argument("-d", "--days", type=int, nargs="?", const=7)
+    parser.add_argument(
+        "--days", "-d", type=int, nargs="?", const=7, help="nth-day forecast"
+    )
     return parser.parse_args()
 
 
