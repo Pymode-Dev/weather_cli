@@ -38,6 +38,7 @@ def parse_args():
 
 def main():
     args = parse_args()
+    print(args)
 
     if args.days:
         omeo_weather = OmeoDailyForecast(args.city, args.days)
