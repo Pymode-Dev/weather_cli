@@ -15,6 +15,7 @@
 - Create a file name: secrets.ini.
 - Get your Openweather API key.
 File template:
+
 """
 
 ; secrets.ini
@@ -36,7 +37,8 @@ BASE_URL=https://api.open-meteo.com/v1/forecast
 BASE_URL=http://api.openweathermap.org/geo/1.0/direct
 
 """
-Note: Don't put spac in the real file.
+
+Note: Don't put space in the real file.
 
 ## Turn the Repo to a Tool in Linux
 - Clone the remote repo.
